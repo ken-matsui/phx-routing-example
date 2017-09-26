@@ -20,6 +20,7 @@ defmodule RoutingWeb.Router do
     ###
     # Add by me.
     get "/hello", HelloController, :index
+    get "/hello/:messenger", HelloController, :show
   end
 
   # Other scopes may use custom stacks.
