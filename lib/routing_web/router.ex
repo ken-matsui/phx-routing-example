@@ -17,6 +17,9 @@ defmodule RoutingWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    ###
+    # Add by me.
+    get "/hello", HelloController, :index
   end
 
   # Other scopes may use custom stacks.
