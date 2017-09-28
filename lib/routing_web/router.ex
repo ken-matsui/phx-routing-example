@@ -2,7 +2,9 @@ defmodule RoutingWeb.Router do
   use RoutingWeb, :router
 
   pipeline :browser do
-    plug :accepts, ["html"]
+    # plug :accepts, ["html"]
+    # http://localhost:4000/?_format=textとすると、"index.text.eex"を参照し、htmlだと"index.html.eex"を参照するようになる．
+    plug :accepts, ["html", "text"]
     plug :fetch_session
     plug :fetch_flash
     plug :protect_from_forgery
