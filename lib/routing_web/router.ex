@@ -21,7 +21,7 @@ defmodule RoutingWeb.Router do
     # Add by me.
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
-    resources "/users", UserController
+    resources "/users", UserController, only: [:index, :show]
   end
 
   # Other scopes may use custom stacks.
