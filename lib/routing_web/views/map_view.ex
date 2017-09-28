@@ -1,5 +1,5 @@
-defmodule HelloPhoenix.PageView do
-  use HelloPhoenix.Web, :view
+defmodule RoutingWeb.MapView do
+  use RoutingWeb.Web, :view
 
   def connection_keys(conn) do
     conn
