@@ -22,6 +22,7 @@ defmodule RoutingWeb.Router do
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
     # return json.
+    get "/json", JsonController, :index
     get "/json/:id", JsonController, :show
     # PUTなどのrequest類全てを追加してくれる．onlyで指定．
     resources "/users", UserController, only: [:index, :show]
