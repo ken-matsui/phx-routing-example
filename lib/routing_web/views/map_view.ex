@@ -1,5 +1,5 @@
 defmodule RoutingWeb.MapView do
-  use RoutingWeb.Web, :view
+  use RoutingWeb, :view
 
   def connection_keys(conn) do
     conn
