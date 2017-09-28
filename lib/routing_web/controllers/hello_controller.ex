@@ -7,6 +7,7 @@ defmodule RoutingWeb.HelloController do
 		# flash messageの生成が以下
 		conn
 		|> put_flash(:error, "Please put something behind hello/.")
+		|> assign(:message, "Welcome Back!")
 		|> render("index.html")
 	end
 
