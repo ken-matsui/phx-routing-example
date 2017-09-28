@@ -26,6 +26,8 @@ defmodule RoutingWeb.Router do
     # return json.
     get "/json", JsonController, :index
     get "/json/:id", JsonController, :show
+    # return map(配列の返却と，html内でfor)
+    get "/map" MapController, :index
     # PUTなどのrequest類全てを追加してくれる．onlyで指定．
     resources "/users", UserController, only: [:index, :show]
   end
