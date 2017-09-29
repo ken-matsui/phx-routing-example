@@ -5,4 +5,7 @@ defmodule RoutingWeb.LayoutView do
   def title do
   	"hogehoge"
   end
+
+  def get_controller_name(conn), do: controller_module(conn)
+  def get_action_name(conn), do: get_action_name(conn)
 end
